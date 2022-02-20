@@ -11,5 +11,5 @@ artifacts:
     files:
         - package.json
         - package-lock.json
-        - 'build/*'
-        - 'public/*'
+        - 'build/**/*'
+        - 'public/**/*'
