@@ -1,5 +1,12 @@
-const world = 'world';
+import express = require('express')
 
-export function hello(world: string): string {
-  return `Hello ${world}! `;
-}
+const app = express()
+
+app.use((req, res) => {
+  res.send('hi')
+})
+
+app.listen(process.env.PORT, () => {
+  console.log('server is ready.')
+})
+
