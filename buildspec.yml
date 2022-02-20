@@ -5,11 +5,11 @@ phases:
             - 'npm install'
     build:
         commands:
-            - 'npm run compile'
+            - 'npm run build'
 artifacts:
     type: zip
     files:
         - package.json
         - package-lock.json
-        - 'build/**/*'
+        - 'build/*'
         - README.md
