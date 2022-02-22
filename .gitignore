@@ -11,6 +11,7 @@
 # production
 /build
 dist/
+src/oldJsSrc/
 
 # misc
 .DS_Store

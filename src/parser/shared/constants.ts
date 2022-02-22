@@ -34,3 +34,6 @@ export const CHARACTER_ID_MAPPINGS: Map<number, string> = new Map<number, string
     [32, "Popo"],
     [33, "User Select(Event) / None"],
 ]);
+
+export const CHARACTER_IMAGE_FILE_PATH = "public/characters/"
+export const GAME_START_OFFSET = -123
