@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@slippi/slippi-js": "^5.1.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +15,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.0",
     "serve": "^11.3.2",
+    "ts-node": "^10.5.0",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
@@ -21,7 +23,8 @@
     "start": "serve -s build",
     "startlocal": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "testreact": "react-scripts test",
+    "testmocha": "mocha -r ts-node/register src/tests/**/*.ts",
     "eject": "react-scripts eject",
     "dist": "sh scripts/dist.sh",
     "clean": "rm -rf build/"
@@ -43,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "chai": "^4.3.6",
+    "io-ts": "^2.2.16",
+    "mocha": "^9.2.1"
   }
 }
